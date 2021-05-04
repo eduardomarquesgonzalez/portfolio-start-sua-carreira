@@ -21,6 +21,13 @@ ESTRUTURA BASE
 font-family: 'Open Sans', sans-serif;
 
 */
+:root{
+    --corbackground:#45dbfc;
+    --corrodape:#04133d;
+    --corfont:#636363;
+    --corfont2: black;
+    --borda: cadetblue;
+}
 
 /* ESTILOS GERAIS */
 html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
@@ -103,29 +110,48 @@ header .coluna ul li a{
 
 
 /* FOOTER */
-footer{}
-footer .container{}
+footer{
+    background-color:var(--corrodape);
+}
+footer .container{  
+   padding: 20px;
+}
 footer nav{}
 footer nav ul{}
-footer nav ul li{}
-footer nav ul li a{}
-footer nav .info-contato{}
-footer nav .info-contato li{}
-footer nav .info-contato li a{}
-footer nav .redes-sociais{}
-footer nav .redes-sociais li{}
-footer nav .redes-sociais li a{}
-footer nav .redes-sociais li a img{}
-footer nav .redes-sociais li a img p{}
+footer nav ul li{
+    color:white;
+}
+footer nav ul li a{
+    color:white;
+}
+
+footer nav .info-contato li{
+    margin: 0 0 15px;
+}
+
+footer nav .redes-sociais{
+    text-align: center;
+    border-top: 1px solid white;
+    margin: 20px 0 0;
+    padding: 30px;
+}
+footer nav .redes-sociais li{
+    margin: 0 2rem;
+    display: inline-block;
+}
+footer nav .redes-sociais li a{
+    
+}
+footer nav .redes-sociais li a img{
+    width: 40px;
+}
+footer nav .redes-sociais li a img p{
+    color: white;
+}
 
 
 /* PÁGINA INICIAL */
-main{}
-main .container{}
-main .linha{}
-main .coluna{}
-main .coluna-esquerda{}
-main .coluna-direita{}
+
 main .coluna section{
     border: 1px solid #d4e9ff;
     margin: 0 0 20px;
@@ -141,7 +167,7 @@ main .coluna section p{
     color: #636363;
     line-height: 1.5;
 }
-main .coluna section ul{}
+
 main .coluna section ul li{
     margin: 0 0 12px;
 }
@@ -154,7 +180,7 @@ main .coluna section ul li strong{
     margin: 5px 0 10px;
     display: inline-block;
 }
-main .coluna section ul li p{}
+
 
 
 /* EXTRAS */
